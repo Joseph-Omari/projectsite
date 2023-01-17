@@ -17,7 +17,7 @@ const Landpage = () => {
             
             <div className='flex pt-4 justify-evenly'>
                 <div className='gap-5 flex'>
-                    <a href="/" ><ButtonI>Explore More m</ButtonI></a>
+                    <a href="/" ><ButtonI>Explore More</ButtonI></a>
                 </div>
             </div>
 

@@ -26,9 +26,9 @@ const Nav = () => {
   return (
     <div className='shadow-md w-full fixed top-0 left-0 z-10'>
         <div className='md:flex items-center justify-between bg-white p-4 md:px-10 '>
-            <div className='font-bold text-2xl cursor-pointer flex items-center text-gray-800'>
-                <span className='text-3xl text-sky-500 pr-1 pt-2 '><ion-icon name="heart"></ion-icon></span>
-                JoeTech.Dev
+            <div className='font-bold text-2xl cursor-pointer flex items-center text-sky-600'>
+                {/* <span className='text-3xl text-sky-500 pr-1 pt-2 '><ion-icon name="heart"></ion-icon></span> */}
+                <a href="/">JoeTech.Dev</a>
             </div>
 
             <div className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden' onClick={()=>setOpen(!open)}>

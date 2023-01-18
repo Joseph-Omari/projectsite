@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Button from './Button'
+// import Button from './Button'
+import { motion } from 'framer-motion'
 
 const Nav = () => {
 
@@ -24,7 +25,7 @@ const Nav = () => {
     let [open,setOpen] = useState(false)
 
   return (
-    <div className='shadow-md w-full fixed top-0 left-0 z-10'>
+    <motion.div initial={{y:-200}} animate={{y:0}} transition={{delay:0.2, duration:1}} className='shadow-md w-full fixed top-0 left-0 z-10'>
         <div className='md:flex items-center justify-between bg-white p-4 md:px-10 '>
             <div className='font-bold text-2xl cursor-pointer flex items-center text-sky-600'>
                 {/* <span className='text-3xl text-sky-500 pr-1 pt-2 '><ion-icon name="heart"></ion-icon></span> */}
@@ -56,7 +57,7 @@ const Nav = () => {
 
         </div>
 
-    </div>
+    </motion.div>
   )
 }
 
